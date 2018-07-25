@@ -16,13 +16,13 @@ public class PageAdapter extends FragmentStatePagerAdapter {
     public Fragment getItem(int i) {
         switch (i) {
             case 0:
-                Layout layout = new Layout();
+                FirstFragment layout = new FirstFragment();
                 return layout;
             case 1:
-                Layout1 layout1 = new Layout1();
+                SecondFragment layout1 = new SecondFragment();
                 return layout1;
             case 2:
-                Layout2 layout2 = new Layout2();
+                ThirdFragment layout2 = new ThirdFragment();
                 return layout2;
             default:
                 return null;

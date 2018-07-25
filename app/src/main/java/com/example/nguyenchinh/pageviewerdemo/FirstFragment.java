@@ -5,13 +5,20 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
-public class Layout1 extends Fragment {
+public class FirstFragment extends Fragment {
+    private TextView textView;
+    private View  fragmentView;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
         //Returning the layout file after inflating
-        return inflater.inflate(R.layout.layout2, container, false);
+        fragmentView = inflater.inflate(R.layout.layout, container,
+                false);
+        textView = (TextView) fragmentView.findViewById(R.id.textView2);
+        textView.setText(R.string.tab1Content);
+        return fragmentView;
     }
 }

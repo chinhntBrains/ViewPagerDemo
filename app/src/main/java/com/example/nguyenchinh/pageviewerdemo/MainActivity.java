@@ -13,9 +13,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         TabLayout tabLayout = findViewById(R.id.tab_layout);
-        tabLayout.addTab(tabLayout.newTab().setText("Tab1"));
-        tabLayout.addTab(tabLayout.newTab().setText("Tab2"));
-        tabLayout.addTab(tabLayout.newTab().setText("Tab3"));
+        tabLayout.addTab(tabLayout.newTab().setText(R.string.tab1));
+        tabLayout.addTab(tabLayout.newTab().setText(R.string.tab2));
+        tabLayout.addTab(tabLayout.newTab().setText(R.string.tab3));
 
         final ViewPager viewPager = findViewById(R.id.pager);
         final PageAdapter adapter = new PageAdapter
